@@ -59,10 +59,6 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        //默认不支持屏幕旋转
-        self.lockInterfaceRotation = YES;
-        //默认认为有权限拍照
-        self.deviceAuthorized = YES;
     }
     return self;
 }
@@ -71,6 +67,11 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    //默认不支持屏幕旋转
+    self.lockInterfaceRotation = YES;
+    //默认认为有权限拍照
+    self.deviceAuthorized = YES;
     
     //创建一个拍摄会话，这个会话负责处理从设备拍照，到转化成图像的过程。
 	AVCaptureSession *session = [[AVCaptureSession alloc] init];
