@@ -12,9 +12,8 @@ MudCamera
     MudCameraViewController *cameraVC = [storyBoard instantiateViewControllerWithIdentifier:@"MudCameraViewController"];
     cameraVC.delegate = self;
     [self presentViewController:cameraVC animated:YES completion:^{
-        
-}];
->>
+>>}];
+
 
 拍照获得的图像将通过MudCameraViewControllerDelegate回调返回。
 
