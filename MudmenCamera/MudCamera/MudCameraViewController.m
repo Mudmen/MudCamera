@@ -207,11 +207,9 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
 
 - (IBAction)cancelAction:(id)sender {
     if (self.previewImageView.image == nil) {
-        [self dismissViewControllerAnimated:YES completion:^{
-            if (self.delegate && [self.delegate respondsToSelector:@selector(mudCameraControllerDidCancel:)]) {
-                [self.delegate mudCameraControllerDidCancel:self];
-            }
-        }];
+        if (self.delegate && [self.delegate respondsToSelector:@selector(mudCameraControllerDidCancel:)]) {
+            [self.delegate mudCameraControllerDidCancel:self];
+        }
     } else {
         self.previewImageView.image = nil;
         [self setCaptured:NO];
@@ -316,9 +314,6 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
     if (self.delegate && [self.delegate respondsToSelector:@selector(mudCameraController:didFinishPickingMediaWithImage:)]) {
         [self.delegate mudCameraController:self didFinishPickingMediaWithImage:self.resultImage];
     }
-     [self dismissViewControllerAnimated:YES completion:^{
-         
-     }];
 }
 
 - (IBAction)captureAction:(id)sender {
