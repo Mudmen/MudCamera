@@ -12,6 +12,10 @@
 #import <AssetsLibrary/AssetsLibrary.h>
 #import "UIImage+Extension.h"
 
+#if (TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
+#define IOS7_OR_LATER	( [[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending )
+#endif
+
 static void * CapturingStillImageContext = &CapturingStillImageContext;
 static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDeviceAuthorizedContext;
 
