@@ -30,6 +30,7 @@
 		64D0F2EB19934E390033EE3E /* plus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D0F2E119934E390033EE3E /* plus@2x.png */; };
 		64D0F2EC19934E390033EE3E /* switch_camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D0F2E219934E390033EE3E /* switch_camera@2x.png */; };
 		64D0F2F4199361BF0033EE3E /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D0F2F3199361BF0033EE3E /* UIImage+Extension.m */; };
+		64D0F2F619937DB50033EE3E /* MudCamera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64D0F2F519937DB50033EE3E /* MudCamera.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		64D0F2E219934E390033EE3E /* switch_camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch_camera@2x.png"; sourceTree = "<group>"; };
 		64D0F2F2199361BF0033EE3E /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
 		64D0F2F3199361BF0033EE3E /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		64D0F2F519937DB50033EE3E /* MudCamera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MudCamera.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 				64D0F2E019934E390033EE3E /* MudCameraViewController.m */,
 				64D0F2F2199361BF0033EE3E /* UIImage+Extension.h */,
 				64D0F2F3199361BF0033EE3E /* UIImage+Extension.m */,
+				64D0F2F519937DB50033EE3E /* MudCamera.storyboard */,
 				64D0F2D919934E390033EE3E /* capture_selected@2x.png */,
 				64D0F2DA19934E390033EE3E /* capture@2x.png */,
 				64D0F2DB19934E390033EE3E /* hdr@2x.png */,
@@ -277,6 +280,7 @@
 				64D0F2EB19934E390033EE3E /* plus@2x.png in Resources */,
 				64D0F2E719934E390033EE3E /* hdr@2x.png in Resources */,
 				648E12CA19922DB500F005FB /* InfoPlist.strings in Resources */,
+				64D0F2F619937DB50033EE3E /* MudCamera.storyboard in Resources */,
 				648E12D319922DB500F005FB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

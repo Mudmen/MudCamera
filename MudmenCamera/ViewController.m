@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "MudCameraViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <MudCameraViewControllerDelegate>
 
 @end
 
@@ -29,10 +29,22 @@
 
 - (IBAction)cameraAction:(id)sender {
     
-    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"MudCamera" bundle:nil];
     MudCameraViewController *cameraVC = [storyBoard instantiateViewControllerWithIdentifier:@"MudCameraViewController"];
+    cameraVC.delegate = self;
     [self presentViewController:cameraVC animated:YES completion:^{
         
     }];
 }
+
+#pragma mark - Delegate
+
+- (void)mudCameraController:(MudCameraViewController *)picker didFinishPickingMediaWithImage:(UIImage *)image {
+    [self.testButton setBackgroundImage:image forState:UIControlStateNormal];
+}
+
+- (void)mudCameraControllerDidCancel:(MudCameraViewController *)picker {
+    
+}
+
 @end

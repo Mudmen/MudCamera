@@ -245,9 +245,6 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
             default:
                 break;
         }
-    } else {
-        [flashButton setTitle:@"" forState:UIControlStateNormal];
-        [flashButton setEnabled:NO];
     }
 }
 
@@ -274,7 +271,7 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
 				preferredPosition = AVCaptureDevicePositionBack;
 				break;
 		}
-		
+        
 		AVCaptureDevice *videoDevice = [MudCameraViewController deviceWithMediaType:AVMediaTypeVideo preferringPosition:preferredPosition];
 		AVCaptureDeviceInput *videoDeviceInput = [AVCaptureDeviceInput deviceInputWithDevice:videoDevice error:nil];
 		
@@ -302,15 +299,26 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
             [self.cancelButton setEnabled:YES];
             [self.captureButton setEnabled:YES];
             [self.comfirmButton setEnabled:YES];
+            AVCaptureDevice *currentVideoDevice = [[self videoDeviceInput] device];
+            AVCaptureDevicePosition currentPosition = [currentVideoDevice position];
+            if (currentPosition == AVCaptureDevicePositionBack) {
+                [self.flashButton setHidden:NO];
+            } else {
+                [self.flashButton setHidden:YES];
+            }
 		});
 	});
 
+    
 }
 
 - (IBAction)comfirmAction:(id)sender {
     if (self.delegate && [self.delegate respondsToSelector:@selector(mudCameraController:didFinishPickingMediaWithImage:)]) {
         [self.delegate mudCameraController:self didFinishPickingMediaWithImage:self.resultImage];
     }
+     [self dismissViewControllerAnimated:YES completion:^{
+         
+     }];
 }
 
 - (IBAction)captureAction:(id)sender {
@@ -357,13 +365,17 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
 - (void)setCaptured:(BOOL)captured {
     self.captureButton.hidden = captured;
     self.switchCameraButton.hidden = captured;
-    self.flashButton.hidden = captured;
     self.comfirmButton.hidden = !captured;
     self.cameraPreviewLayer.hidden = captured;
     if (captured) {
         [self.cancelButton setTitle:@"重拍" forState:UIControlStateNormal];
     } else {
         [self.cancelButton setTitle:@"取消" forState:UIControlStateNormal];
+    }
+    AVCaptureDevice *currentVideoDevice = [[self videoDeviceInput] device];
+    AVCaptureDevicePosition currentPosition = [currentVideoDevice position];
+    if (currentPosition == AVCaptureDevicePositionBack) {
+        [self.flashButton setHidden:captured];
     }
 }
 
