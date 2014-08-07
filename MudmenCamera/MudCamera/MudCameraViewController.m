@@ -13,7 +13,9 @@
 #import "UIImage+Extension.h"
 
 #if (TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
+#ifndef IOS7_OR_LATER
 #define IOS7_OR_LATER	( [[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending )
+#endif
 #endif
 
 static void * CapturingStillImageContext = &CapturingStillImageContext;
@@ -153,6 +155,7 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
     
     [self.comfirmButton setHidden:YES];
     self.previewImageView.frame = self.cameraPreviewLayer.frame;
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -171,6 +174,7 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
 		[self removeObserver:self forKeyPath:@"sessionRunningAndDeviceAuthorized" context:SessionRunningAndDeviceAuthorizedContext];
 		[self removeObserver:self forKeyPath:@"stillImageOutput.capturingStillImage" context:CapturingStillImageContext];
 	});
+    [[UIApplication sharedApplication] setStatusBarHidden:NO];
 }
 
 
