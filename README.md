@@ -8,11 +8,13 @@ MudCamera
 =========
 将工程中的MudCamera文件夹，拷入你的工程。
 然后在ViewController presentViewController就行了
->>UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"MudCamera" bundle:nil];
+<pre><code>
+UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"MudCamera" bundle:nil];
     MudCameraViewController *cameraVC = [storyBoard instantiateViewControllerWithIdentifier:@"MudCameraViewController"];
     cameraVC.delegate = self;
     [self presentViewController:cameraVC animated:YES completion:^{
->>}];
+}];
+</code></pre>
 
 
 拍照获得的图像将通过MudCameraViewControllerDelegate回调返回。
