@@ -53,6 +53,8 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
         // Custom initialization
         //默认不支持屏幕旋转
         self.lockInterfaceRotation = YES;
+        //默认认为有权限拍照
+        self.deviceAuthorized = YES;
     }
     return self;
 }
@@ -69,8 +71,13 @@ static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDevic
 	//创建拍摄画面的呈现视图，与会话关联
 	[[self cameraPreviewLayer] setSession:session];
 	
-	//检查是否有拍照权限
-	[self checkDeviceAuthorizationStatus];
+    //检查是否有拍照权限
+#ifdef __IPHONE_7_0
+    if (IOS7_OR_LATER)
+    {
+        [self checkDeviceAuthorizationStatus];
+    }
+#endif
     
     //创建一个GCD线程对列
 	dispatch_queue_t sessionQueue = dispatch_queue_create("session queue", DISPATCH_QUEUE_SERIAL);
