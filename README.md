@@ -19,6 +19,10 @@ UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"MudCamera" bundle:
 
 拍照获得的图像将通过MudCameraViewControllerDelegate回调返回。
 
+环境
+=========
+Xcode 5.0+   iOS6.0+
+
 Keyword
 =========
 AVCaptureSession, AVCaptureDeviceInput ,AVCaptureStillImageOutput。
