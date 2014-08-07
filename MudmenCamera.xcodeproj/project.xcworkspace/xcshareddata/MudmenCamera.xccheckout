@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D403F76B-E64F-4BCF-B38A-CFC794BD4E9F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MudmenCamera</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EA2B6379-9DA2-43CB-A385-9977909DE6FC</key>
+		<string>https://github.com/Mudmen/MudCamera.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MudmenCamera.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EA2B6379-9DA2-43CB-A385-9977909DE6FC</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Mudmen/MudCamera.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EA2B6379-9DA2-43CB-A385-9977909DE6FC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EA2B6379-9DA2-43CB-A385-9977909DE6FC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MudCamera_GitHub</string>
+		</dict>
+	</array>
+</dict>
+</plist>

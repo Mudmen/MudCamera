@@ -15,7 +15,7 @@
 static void * CapturingStillImageContext = &CapturingStillImageContext;
 static void * SessionRunningAndDeviceAuthorizedContext = &SessionRunningAndDeviceAuthorizedContext;
 
-@interface MudCameraViewController () <AVCaptureFileOutputRecordingDelegate>
+@interface MudCameraViewController ()
 
 // Session management.
 @property (nonatomic) dispatch_queue_t sessionQueue; // Communicate with the session and other session objects on this queue.
