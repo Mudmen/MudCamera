@@ -35,7 +35,7 @@
 
 @protocol MudCameraViewControllerDelegate <NSObject>
 
-- (void)mudCameraController:(MudCameraViewController *)picker didFinishPickingMediaWithImage:(UIImage *)image;
-- (void)mudCameraControllerDidCancel:(MudCameraViewController *)picker;
+- (void)mudCameraController:(MudCameraViewController *)viewController didFinishPickingMediaWithImage:(UIImage *)image;
+- (void)mudCameraControllerDidCancel:(MudCameraViewController *)viewController;
 
 @end

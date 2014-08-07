@@ -39,12 +39,16 @@
 
 #pragma mark - Delegate
 
-- (void)mudCameraController:(MudCameraViewController *)picker didFinishPickingMediaWithImage:(UIImage *)image {
-    [self.testButton setBackgroundImage:image forState:UIControlStateNormal];
+- (void)mudCameraController:(MudCameraViewController *)viewController didFinishPickingMediaWithImage:(UIImage *)image {
+    [viewController dismissViewControllerAnimated:YES completion:^{
+     [self.testButton setBackgroundImage:image forState:UIControlStateNormal];
+    }];
+    
 }
 
-- (void)mudCameraControllerDidCancel:(MudCameraViewController *)picker {
-    
+- (void)mudCameraControllerDidCancel:(MudCameraViewController *)viewController {
+    [viewController dismissViewControllerAnimated:YES completion:^{
+    }];
 }
 
 @end
