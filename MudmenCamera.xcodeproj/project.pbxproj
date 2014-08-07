@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		648E12C019922DB400F005FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 648E12BF19922DB400F005FB /* Foundation.framework */; };
+		648E12C219922DB400F005FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 648E12C119922DB400F005FB /* CoreGraphics.framework */; };
+		648E12C419922DB400F005FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 648E12C319922DB400F005FB /* UIKit.framework */; };
+		648E12CA19922DB500F005FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 648E12C819922DB500F005FB /* InfoPlist.strings */; };
+		648E12CC19922DB500F005FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 648E12CB19922DB500F005FB /* main.m */; };
+		648E12D019922DB500F005FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 648E12CF19922DB500F005FB /* AppDelegate.m */; };
+		648E12D319922DB500F005FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648E12D119922DB500F005FB /* Main.storyboard */; };
+		648E12D619922DB500F005FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 648E12D519922DB500F005FB /* ViewController.m */; };
+		648E12D819922DB500F005FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 648E12D719922DB500F005FB /* Images.xcassets */; };
+		648E12DF19922DB500F005FB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 648E12DE19922DB500F005FB /* XCTest.framework */; };
+		648E12E019922DB500F005FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 648E12BF19922DB400F005FB /* Foundation.framework */; };
+		648E12E119922DB500F005FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 648E12C319922DB400F005FB /* UIKit.framework */; };
+		648E12E919922DB500F005FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 648E12E719922DB500F005FB /* InfoPlist.strings */; };
+		648E12EB19922DB500F005FB /* MudmenCameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 648E12EA19922DB500F005FB /* MudmenCameraTests.m */; };
+		64D0F2E519934E390033EE3E /* capture_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D0F2D919934E390033EE3E /* capture_selected@2x.png */; };
+		64D0F2E619934E390033EE3E /* capture@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D0F2DA19934E390033EE3E /* capture@2x.png */; };
+		64D0F2E719934E390033EE3E /* hdr@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D0F2DB19934E390033EE3E /* hdr@2x.png */; };
+		64D0F2E819934E390033EE3E /* less@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D0F2DC19934E390033EE3E /* less@2x.png */; };
+		64D0F2E919934E390033EE3E /* MudCameraPreviewLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D0F2DE19934E390033EE3E /* MudCameraPreviewLayer.m */; };
+		64D0F2EA19934E390033EE3E /* MudCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D0F2E019934E390033EE3E /* MudCameraViewController.m */; };
+		64D0F2EB19934E390033EE3E /* plus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D0F2E119934E390033EE3E /* plus@2x.png */; };
+		64D0F2EC19934E390033EE3E /* switch_camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D0F2E219934E390033EE3E /* switch_camera@2x.png */; };
+		64D0F2F4199361BF0033EE3E /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D0F2F3199361BF0033EE3E /* UIImage+Extension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		648E12E219922DB500F005FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 648E12B419922DB400F005FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 648E12BB19922DB400F005FB;
+			remoteInfo = MudmenCamera;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		648E12BC19922DB400F005FB /* MudmenCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MudmenCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		648E12BF19922DB400F005FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		648E12C119922DB400F005FB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		648E12C319922DB400F005FB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		648E12C719922DB500F005FB /* MudmenCamera-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MudmenCamera-Info.plist"; sourceTree = "<group>"; };
+		648E12C919922DB500F005FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		648E12CB19922DB500F005FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		648E12CD19922DB500F005FB /* MudmenCamera-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MudmenCamera-Prefix.pch"; sourceTree = "<group>"; };
+		648E12CE19922DB500F005FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		648E12CF19922DB500F005FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		648E12D219922DB500F005FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		648E12D419922DB500F005FB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		648E12D519922DB500F005FB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		648E12D719922DB500F005FB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		648E12DD19922DB500F005FB /* MudmenCameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MudmenCameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		648E12DE19922DB500F005FB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		648E12E619922DB500F005FB /* MudmenCameraTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MudmenCameraTests-Info.plist"; sourceTree = "<group>"; };
+		648E12E819922DB500F005FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		648E12EA19922DB500F005FB /* MudmenCameraTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MudmenCameraTests.m; sourceTree = "<group>"; };
+		64D0F2D919934E390033EE3E /* capture_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "capture_selected@2x.png"; sourceTree = "<group>"; };
+		64D0F2DA19934E390033EE3E /* capture@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "capture@2x.png"; sourceTree = "<group>"; };
+		64D0F2DB19934E390033EE3E /* hdr@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hdr@2x.png"; sourceTree = "<group>"; };
+		64D0F2DC19934E390033EE3E /* less@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "less@2x.png"; sourceTree = "<group>"; };
+		64D0F2DD19934E390033EE3E /* MudCameraPreviewLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MudCameraPreviewLayer.h; sourceTree = "<group>"; };
+		64D0F2DE19934E390033EE3E /* MudCameraPreviewLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MudCameraPreviewLayer.m; sourceTree = "<group>"; };
+		64D0F2DF19934E390033EE3E /* MudCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MudCameraViewController.h; sourceTree = "<group>"; };
+		64D0F2E019934E390033EE3E /* MudCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MudCameraViewController.m; sourceTree = "<group>"; };
+		64D0F2E119934E390033EE3E /* plus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus@2x.png"; sourceTree = "<group>"; };
+		64D0F2E219934E390033EE3E /* switch_camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch_camera@2x.png"; sourceTree = "<group>"; };
+		64D0F2F2199361BF0033EE3E /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		64D0F2F3199361BF0033EE3E /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		648E12B919922DB400F005FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				648E12C219922DB400F005FB /* CoreGraphics.framework in Frameworks */,
+				648E12C419922DB400F005FB /* UIKit.framework in Frameworks */,
+				648E12C019922DB400F005FB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		648E12DA19922DB500F005FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				648E12DF19922DB500F005FB /* XCTest.framework in Frameworks */,
+				648E12E119922DB500F005FB /* UIKit.framework in Frameworks */,
+				648E12E019922DB500F005FB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		648E12B319922DB400F005FB = {
+			isa = PBXGroup;
+			children = (
+				648E12C519922DB500F005FB /* MudmenCamera */,
+				648E12E419922DB500F005FB /* MudmenCameraTests */,
+				648E12BE19922DB400F005FB /* Frameworks */,
+				648E12BD19922DB400F005FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		648E12BD19922DB400F005FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				648E12BC19922DB400F005FB /* MudmenCamera.app */,
+				648E12DD19922DB500F005FB /* MudmenCameraTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		648E12BE19922DB400F005FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				648E12BF19922DB400F005FB /* Foundation.framework */,
+				648E12C119922DB400F005FB /* CoreGraphics.framework */,
+				648E12C319922DB400F005FB /* UIKit.framework */,
+				648E12DE19922DB500F005FB /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		648E12C519922DB500F005FB /* MudmenCamera */ = {
+			isa = PBXGroup;
+			children = (
+				64D0F2D819934DFA0033EE3E /* MudCamera */,
+				648E12CE19922DB500F005FB /* AppDelegate.h */,
+				648E12CF19922DB500F005FB /* AppDelegate.m */,
+				648E12D119922DB500F005FB /* Main.storyboard */,
+				648E12D419922DB500F005FB /* ViewController.h */,
+				648E12D519922DB500F005FB /* ViewController.m */,
+				648E12D719922DB500F005FB /* Images.xcassets */,
+				648E12C619922DB500F005FB /* Supporting Files */,
+			);
+			path = MudmenCamera;
+			sourceTree = "<group>";
+		};
+		648E12C619922DB500F005FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				648E12C719922DB500F005FB /* MudmenCamera-Info.plist */,
+				648E12C819922DB500F005FB /* InfoPlist.strings */,
+				648E12CB19922DB500F005FB /* main.m */,
+				648E12CD19922DB500F005FB /* MudmenCamera-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		648E12E419922DB500F005FB /* MudmenCameraTests */ = {
+			isa = PBXGroup;
+			children = (
+				648E12EA19922DB500F005FB /* MudmenCameraTests.m */,
+				648E12E519922DB500F005FB /* Supporting Files */,
+			);
+			path = MudmenCameraTests;
+			sourceTree = "<group>";
+		};
+		648E12E519922DB500F005FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				648E12E619922DB500F005FB /* MudmenCameraTests-Info.plist */,
+				648E12E719922DB500F005FB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		64D0F2D819934DFA0033EE3E /* MudCamera */ = {
+			isa = PBXGroup;
+			children = (
+				64D0F2DD19934E390033EE3E /* MudCameraPreviewLayer.h */,
+				64D0F2DE19934E390033EE3E /* MudCameraPreviewLayer.m */,
+				64D0F2DF19934E390033EE3E /* MudCameraViewController.h */,
+				64D0F2E019934E390033EE3E /* MudCameraViewController.m */,
+				64D0F2F2199361BF0033EE3E /* UIImage+Extension.h */,
+				64D0F2F3199361BF0033EE3E /* UIImage+Extension.m */,
+				64D0F2D919934E390033EE3E /* capture_selected@2x.png */,
+				64D0F2DA19934E390033EE3E /* capture@2x.png */,
+				64D0F2DB19934E390033EE3E /* hdr@2x.png */,
+				64D0F2DC19934E390033EE3E /* less@2x.png */,
+				64D0F2E119934E390033EE3E /* plus@2x.png */,
+				64D0F2E219934E390033EE3E /* switch_camera@2x.png */,
+			);
+			path = MudCamera;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		648E12BB19922DB400F005FB /* MudmenCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 648E12EE19922DB500F005FB /* Build configuration list for PBXNativeTarget "MudmenCamera" */;
+			buildPhases = (
+				648E12B819922DB400F005FB /* Sources */,
+				648E12B919922DB400F005FB /* Frameworks */,
+				648E12BA19922DB400F005FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MudmenCamera;
+			productName = MudmenCamera;
+			productReference = 648E12BC19922DB400F005FB /* MudmenCamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+		648E12DC19922DB500F005FB /* MudmenCameraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 648E12F119922DB500F005FB /* Build configuration list for PBXNativeTarget "MudmenCameraTests" */;
+			buildPhases = (
+				648E12D919922DB500F005FB /* Sources */,
+				648E12DA19922DB500F005FB /* Frameworks */,
+				648E12DB19922DB500F005FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				648E12E319922DB500F005FB /* PBXTargetDependency */,
+			);
+			name = MudmenCameraTests;
+			productName = MudmenCameraTests;
+			productReference = 648E12DD19922DB500F005FB /* MudmenCameraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		648E12B419922DB400F005FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Mudmen;
+				TargetAttributes = {
+					648E12DC19922DB500F005FB = {
+						TestTargetID = 648E12BB19922DB400F005FB;
+					};
+				};
+			};
+			buildConfigurationList = 648E12B719922DB400F005FB /* Build configuration list for PBXProject "MudmenCamera" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 648E12B319922DB400F005FB;
+			productRefGroup = 648E12BD19922DB400F005FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				648E12BB19922DB400F005FB /* MudmenCamera */,
+				648E12DC19922DB500F005FB /* MudmenCameraTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		648E12BA19922DB400F005FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64D0F2E619934E390033EE3E /* capture@2x.png in Resources */,
+				64D0F2EC19934E390033EE3E /* switch_camera@2x.png in Resources */,
+				64D0F2E819934E390033EE3E /* less@2x.png in Resources */,
+				64D0F2E519934E390033EE3E /* capture_selected@2x.png in Resources */,
+				648E12D819922DB500F005FB /* Images.xcassets in Resources */,
+				64D0F2EB19934E390033EE3E /* plus@2x.png in Resources */,
+				64D0F2E719934E390033EE3E /* hdr@2x.png in Resources */,
+				648E12CA19922DB500F005FB /* InfoPlist.strings in Resources */,
+				648E12D319922DB500F005FB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		648E12DB19922DB500F005FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				648E12E919922DB500F005FB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		648E12B819922DB400F005FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64D0F2F4199361BF0033EE3E /* UIImage+Extension.m in Sources */,
+				64D0F2EA19934E390033EE3E /* MudCameraViewController.m in Sources */,
+				64D0F2E919934E390033EE3E /* MudCameraPreviewLayer.m in Sources */,
+				648E12D619922DB500F005FB /* ViewController.m in Sources */,
+				648E12D019922DB500F005FB /* AppDelegate.m in Sources */,
+				648E12CC19922DB500F005FB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		648E12D919922DB500F005FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				648E12EB19922DB500F005FB /* MudmenCameraTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		648E12E319922DB500F005FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 648E12BB19922DB400F005FB /* MudmenCamera */;
+			targetProxy = 648E12E219922DB500F005FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		648E12C819922DB500F005FB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				648E12C919922DB500F005FB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		648E12D119922DB500F005FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				648E12D219922DB500F005FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		648E12E719922DB500F005FB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				648E12E819922DB500F005FB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		648E12EC19922DB500F005FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		648E12ED19922DB500F005FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		648E12EF19922DB500F005FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MudmenCamera/MudmenCamera-Prefix.pch";
+				INFOPLIST_FILE = "MudmenCamera/MudmenCamera-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		648E12F019922DB500F005FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MudmenCamera/MudmenCamera-Prefix.pch";
+				INFOPLIST_FILE = "MudmenCamera/MudmenCamera-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		648E12F219922DB500F005FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MudmenCamera.app/MudmenCamera";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MudmenCamera/MudmenCamera-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MudmenCameraTests/MudmenCameraTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		648E12F319922DB500F005FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MudmenCamera.app/MudmenCamera";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MudmenCamera/MudmenCamera-Prefix.pch";
+				INFOPLIST_FILE = "MudmenCameraTests/MudmenCameraTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		648E12B719922DB400F005FB /* Build configuration list for PBXProject "MudmenCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				648E12EC19922DB500F005FB /* Debug */,
+				648E12ED19922DB500F005FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		648E12EE19922DB500F005FB /* Build configuration list for PBXNativeTarget "MudmenCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				648E12EF19922DB500F005FB /* Debug */,
+				648E12F019922DB500F005FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		648E12F119922DB500F005FB /* Build configuration list for PBXNativeTarget "MudmenCameraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				648E12F219922DB500F005FB /* Debug */,
+				648E12F319922DB500F005FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 648E12B419922DB400F005FB /* Project object */;
+}
