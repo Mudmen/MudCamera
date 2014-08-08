@@ -18,6 +18,19 @@ UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"MudCamera" bundle:
 
 
 拍照获得的图像将通过MudCameraViewControllerDelegate回调返回。
+<pre><code>
+- (void)mudCameraControllerDidCancel:(MudCameraViewController *)viewController {
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+}
+
+- (void)mudCameraController:(MudCameraViewController *)viewController didFinishPickingMediaWithImage:(UIImage *)image {
+    [self dismissViewControllerAnimated:YES completion:^{
+        //use image
+    }];
+}
+</code></pre>
 
 环境
 =========
